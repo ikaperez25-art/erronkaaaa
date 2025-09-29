@@ -1,0 +1,1 @@
+  Aresen karpeta
