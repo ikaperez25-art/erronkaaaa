@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ares Perez">
+  <meta name="description" content="Zinema Usurbil webgunea">
+  <title>Zinema Usurbil</title>
+  
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <style>
+    body {
+      margin: 0;
+      background-color: rgb(197, 197, 197);
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .barrabeltz {
+      background-color: rgb(172, 172, 172);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      height: 80px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .barrabeltz .logoa img {
+      margin-left: 0%;
+      height: 81px;
+      width: auto;
+    }
+
+ 
+    .menu-hamburguesa {
+      cursor: pointer;
+    }
+
+    .menu-hamburguesa .material-icons {
+      font-size: 32px;
+      color: #333;
+    }
+
+    .right-items {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .search-form input[type="text"] {
+      padding: 6px;
+      border-radius: 4px;
+      border: none;
+    }
+
+    .search-form button {
+      padding: 6px 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #555;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .search-form button:hover {
+      background-color: #777;
+    }
+
+    main {
+      font-style: italic;
+      text-align: center;
+      flex: 1;
+      padding: 20px;
+    }
+
+    .filmak img {
+      display: block;
+      max-width: 100%;
+      width: 800px;
+      align-items: center;
+      margin: 0%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      object-fit: cover;
+    }
+
+    footer {
+      background-color: rgb(172, 172, 172);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: auto;
+    }
+    footer .Filmguztiak{
+      text-align: center;
+    }
+
+    footer .left-items,
+    footer .right-items {
+      display: flex;
+      gap: 15px;
+    }
+
+    footer img {
+      height: 40px;
+      width: auto;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    footer img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="barrabeltz">
+      <div class="logoa">
+        <img src="img/logoak/logoa.png" alt="Logoa">
+      </div>
+
+      <div class="right-items">
+        <form class="search-form">
+          <input type="text" placeholder="Bilatu...">
+          <button type="submit">Bilatu</button>
+        </form>
+        
+       
+        <div class="menu-hamburguesa">
+          <span class="material-icons">menu</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1><marquee><mark style="color: white;background-color: black;">Zinema Usurbil</mark></marquee></h1>
+    <p><b>Ongi etorri Usurbilgo zinemaren webguneara!</b></p>
+    <div class="filmak">
+      <img src="img/filmenargazkiak/filmak.png" alt="filmen argazkia">
+    </div>
+  </main>
+
+  <footer>
+    <div class="Filmguztiak">
+    <a href="bi.html">Filma guztiak</a></div>
+    <div class="left-items">
+      <a href="https://www.instagram.com" target="_blank">
+        <img src="img/logoak/instaa.png" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com" target="_blank">
+        <img src="img/logoak/facebook.png" alt="Facebook">
+      </a>
+    </div>
+    <div class="right-items">
+      <a href="https://www.twitter.com" target="_blank">
+        <img src="img/logoak/twitter.png" alt="Twitter">
+      </a>
+      <a href="mailto:tuemail@gmail.com">
+        <img src="img/logoak/gmail.png" alt="Gmail">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
