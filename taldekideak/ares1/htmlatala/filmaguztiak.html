@@ -7,38 +7,132 @@
   <meta name="author" content="Ares Perez">
   <meta name="description" content="Zinema Usurbil webgunea">
   <title>Filma guztiak</title>
-</head>
-<style>
 
-tbody{
-  height: 50px;
-  width: 50px;
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
+  <style>
+    .atzerakobotoia {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #777;
+      color: white;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+      text-decoration: none; 
+      display: inline-block;
+    }
+
+    .atzerakobotoia:hover {
+      background-color: #555;
+    }
+
+    .material-icons {
+      font-size: 24px;
+      color: white;
+    }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100;
+    margin: 0% auto;
+    background-color: rgb(197, 197, 197);
+  }
+
+  td {
+
+    padding: 0px;
+    text-align: center;
+  }
+
+  img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  img:hover {
+    transform: scale(1.05);
+  }
+.header{
+    background-color: #777;
+
 }
+  .footer {
+    background-color: #777;
+  }
 </style>
-
+</head>
 <body>
-  <h1>Filma guztiak</h1>
+  <header>
+    <h1>Filma guztiak</h1>
+    <h2>Klikatu film batean informazio gehiago ikusteko filmari buruz</h2>
+
+    <footer> </footer>
+  </header>
 
 
-  <tbody>
+  <table>
     <tr>
-      <td><img src="img/filmenargazkiak/filma1.png"></td>
-      <td><img src="img/filmenargazkiak/filma2.png"></td>
+      <td>
+        <a href="film1informazioa.html" target="_blank">
+          <img src="img/filmenargazkiak/filma1.png" alt="film1">
+        </a>
+      </td>
+      <td>
+        <a href="film2informazioa.html" target="_blank">
+          <img src="img/filmenargazkiak/filma2.png" alt="film2">
+        </a>
+      </td>
+      <td>
+        <a href="film3informazioa.html" target="_blank">
+          <img src="img/filmenargazkiak/filma3.png" alt="film3">
+        </a>
+      </td>
+      <td>
+        <a href="film4informazioa.html" target="_blank">
+          <img src="img/filmenargazkiak/filma4.png" alt="film4">
+        </a>
+      </td>
+      <td>
+        <a href="film5informazioa.html" target="_blank">
+          <img src="img/filmenargazkiak/filma5.png" alt="film5">
+        </a>
+      </td>
     </tr>
     <tr>
-      <td><img src="img/filmenargazkiak/filma3.png"></td>
-      <td><img src="img/filmenargazkiak/filma4.png"></td>
+      <td>
+        <a href="film6informazioa.html" target="_blank">
+          <img src="img/filmenargazkiak/filma6.png" alt="film6">
+        </a>
+      </td>
+      <td>
+        <a href="film7informazioa.html" target="_blank">
+          <img src="img/filmenargazkiak/filma7.png" alt="film7">
+        </a>
+      </td>
+      <td>
+        <a href="film8informazioa.html" target="_blank">
+          <img src="img/filmenargazkiak/filma8.png" alt="film8">
+        </a>
+      </td>
+      <td>
+        <a href="film9informazioa.html" target="_blank">
+          <img src="img/filmenargazkiak/filma9.png" alt="film9">
+        </a>
+      </td>
+      <td>
+        <a href="film10informazioa.html" target="_blank">
+          <img src="img/filmenargazkiak/filma10.png" alt="film10">
+        </a>
+      </td>
     </tr>
-    <tr>
-      <td><img src="img/filmenargazkiak/filma5.png"></td>
-      <td><img src="img/filmenargazkiak/filma6.png"></td>
-    </tr>
-    <tr>
-      <td><img src="img/filmenargazkiak/filma7.png"></td>
-      <td><img src="img/filmenargazkiak/filma8.png"></td>
-    </tr>
-    <tr>
-      <td><img src="img/filmenargazkiak/filma9.png"></td>
-      <td><img src="img/filmenargazkiak/filma10.png"></td>
-    </tr>>
-  </tbody>
+  </table>
