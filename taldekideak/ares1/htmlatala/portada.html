@@ -11,8 +11,13 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       background-color: rgb(255, 255, 255);
       font-family: Arial, sans-serif;
       display: flex;
@@ -20,6 +25,7 @@
       min-height: 100vh;
     }
 
+    
     .barrabeltz {
       background-color: rgb(172, 172, 172);
       display: flex;
@@ -32,9 +38,29 @@
     }
 
     .barrabeltz .logoa img {
-      margin-left: 0%;
       height: 81px;
       width: auto;
+    }
+
+    .menu-items {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .Informazioa a, .Promozioak a, .Estrenoak a {
+      color: #333;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      border-radius: 4px;
+    }
+
+    .Informazioa a:hover, .Promozioak a:hover, .Estrenoak a:hover {
+      color: #000;
+      background-color: rgba(255,255,255,0.3);
     }
 
     .menu-hamburguesa {
@@ -49,60 +75,76 @@
     .right-items {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 15px;
     }
 
     .search-form input[type="text"] {
-      padding: 6px;
+      padding: 8px 12px;
       border-radius: 4px;
-      border: none;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      width: 200px;
     }
 
     .search-form button {
-      padding: 6px 10px;
+      padding: 8px 15px;
       border: none;
       border-radius: 4px;
       background-color: #555;
       color: #fff;
       cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
     }
 
     .search-form button:hover {
       background-color: #777;
     }
-.header{
-  padding: 40px 20px 20px 20px;
-      background: linear-gradient(135deg, #777, #555);
-      color: #fff;
-      font-size: 0.9rem;
 
-
-}
+  
     main {
       font-style: italic;
       text-align: center;
       flex: 1;
-      padding: 20px;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #f8f8f8, #e8e8e8);
+    }
+
+    main h1 {
+      margin-bottom: 20px;
+    }
+
+    main p {
+      margin-bottom: 30px;
+      font-size: 18px;
     }
 
     .filmak img {
       display: block;
       max-width: 100%;
       width: 800px;
-      align-items: center;
-      margin: 0%;
       height: auto;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto;
       object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
+    marquee {
+      padding: 10px 0;
+    }
+
+    mark {
+      padding: 8px 16px;
+    }
+
+   
     footer {
       background-color: rgb(172, 172, 172);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 15px 20px;
+      padding: 20px;
       width: 100%;
       box-sizing: border-box;
       margin-top: auto;
@@ -113,10 +155,27 @@
       flex: 1;
     }
 
+    .Filmguztiak a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 10px 20px;
+      background-color: rgba(255,255,255,0.3);
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .Filmguztiak a:hover {
+      background-color: rgba(255,255,255,0.5);
+      color: #000;
+    }
+
     footer .left-items,
     footer .right-items {
       display: flex;
-      gap: 15px;
+      gap: 20px;
+      align-items: center;
     }
 
     footer img {
@@ -138,16 +197,18 @@
       <div class="logoa">
         <img src="img/logoak/logoa.png" alt="Logoa">
       </div>
-      <div class="Informazioa">
-  <a href="informazioa.html">Informazioa</a>
-</div>
-      <div class="Promozioak">
-        <a href="promozioak.html">  Promozioak</a>
-      </div><div class="Estrenoak">
-        <a href="estrenoak.html">Estrenoak</a>
-      </div>
       
-
+      <div class="menu-items">
+        <div class="Informazioa">
+          <a href="informazioa.html">Informazioa</a>
+        </div>
+        <div class="Promozioak">
+          <a href="promozioak.html">Promozioak</a>
+        </div>
+        <div class="Estrenoak">
+          <a href="estrenoak.html">Estrenoak</a>
+        </div>
+      </div>
 
       <div class="right-items">
         <form class="search-form">
@@ -163,7 +224,11 @@
   </header>
 
   <main>
-    <h1><marquee><mark style="color: white;background-color: black;">Zinema Usurbil</mark></marquee></h1>
+    <h1>
+      <marquee>
+        <mark style="color: white;background-color: black;">Zinema Usurbil</mark>
+      </marquee>
+    </h1>
     <p><b>Ongi etorri Usurbilgo zinemaren webguneara!</b></p>
     <div class="filmak">
       <img src="img/filmenargazkiak/filmak.png" alt="filmen argazkia">
@@ -181,7 +246,7 @@
     </div>
     
     <div class="Filmguztiak">
-      <a href="filmaguztiak.html">Filmaa guztiak</a>
+      <a href="filmaguztiak.html">Film guztiak</a>
     </div>
     
     <div class="right-items">
@@ -192,8 +257,6 @@
         <img src="img/logoak/gmail.png" alt="Gmail">
       </a>
     </div>
-   
-    
   </footer>
 </body>
 </html>
