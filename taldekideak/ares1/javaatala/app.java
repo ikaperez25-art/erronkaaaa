@@ -17,10 +17,63 @@ astekoegunak.add("Larunbata");
 
 Scanner sc=new Scanner(System.in);
 System.out.println("Aukeratu asteko eguna");
-int astekoeguna= sc.nextInt();
-System.out.println(astekoegunak);
 
 
+
+
+for(int i=0;i<astekoegunak.size();i++){
+System.out.println(i+1+". "+astekoegunak.get(i));
+}
+int aukera=sc.nextInt();
+if (aukera>=1 && aukera<=astekoegunak.size()) {
+    String astekoegunaaukeratuta= astekoegunak.get(aukera-1);
+    System.out.println("Aukeratu duzu "+astekoegunaaukeratuta);
+
+switch (astekoegunaaukeratuta) {
+    case "Astelehena":
+    System.out.println("Asteleheneko filmak hauek dira");
+        System.out.println("Laspelis");
+        break; 
+         case "Asteartea":
+    System.out.println("Astearteko filmak hauek dira");
+
+        System.out.println("Laspelis");
+        
+        break;
+          case "Asteazkena":
+    System.out.println("Asteazkeneko filmak hauek dira");
+
+        System.out.println("Laspelis");
+        
+        break; 
+         case "Osteguna":
+    System.out.println("Osteguneko filmak hauek dira");
+
+        System.out.println("Laspelis");
+        
+        break;  
+        case "Ostirala":
+    System.out.println("Ostiraleko filmak hauek dira");
+
+        System.out.println("Laspelis");
+        
+        break;  
+        case "Larunbata":
+    System.out.println("Larunbateko filmak hauek dira");
+
+        System.out.println("Laspelis");
+
+        
+        break;
+
+    default:
+    System.out.println("Ezin da aukeratu eguna");
+        break;
+
+}
+}else{
+    System.out.println("Sartutako zenbakia baliogabea da");
+}
 
     }
 }
